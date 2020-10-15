@@ -29,3 +29,7 @@ Manifest.toml
 
 # project specific settings
 .vscode
+
+
+## Random stuff
+tmp.jl

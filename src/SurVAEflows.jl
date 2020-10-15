@@ -5,6 +5,10 @@ module SurVAEflows
     using LinearAlgebra
     using Statistics
 
+    # include distribution defs
+    include(joinpath("distributions", "distributions.jl"))
+    include(joinpath("distributions", "conditional", "normal.jl"))
+
     # include transform defs
     include(joinpath("transforms", "transforms.jl"))
     include(joinpath("transforms", "stochastic", "VAE.jl"))

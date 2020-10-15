@@ -6,8 +6,6 @@ abstract type Surjection <: Transform end
 
 abstract type Bijection <: Transform end
 
-@enum Direction inf gen
-
 struct Augmentation <: Surjection
     encoder
     split_size

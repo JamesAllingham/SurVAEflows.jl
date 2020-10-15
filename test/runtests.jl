@@ -1,5 +1,3 @@
-# include("src/SurVAEflows.jl")
-# include("test/runtests.jl")
 using SurVAEflows
 using Flux
 using Flux.Data: DataLoader
