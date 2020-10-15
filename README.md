@@ -9,16 +9,19 @@ To setup the environment run the following from this directory:
 using Pkg
 Pkg.activate(".")
 Pkg.instantiate()
+# or
+] activate
+] instantiate
 ```
 
 Then to use:
 
 ```julia
-using Revise # useful for auto-reloading changes to SurVAEflows
-include("src/SurVAEflows.jl")
-using .SurVAEflows
+Pkg.activate(".")
+using SurVAEflows
 vae = SurVAEflows.VAE(enc, dec)
 # or
-using .SurVAEflows: VAE, Flow
+Pkg.activate(".")
+using SurVAEflows: VAE
 vae = VAE(enc, dec)
 ```
